@@ -1,29 +1,86 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Soluciones Hospedadas</title>
+    <link rel="shortcut icon" href="img/favicon.ico" >
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/shcloudservices.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Soluciones Hospedadas</a>
+          <ul class="nav nav-pills">
+  				<li class="active"><a href="#">Inicio</a></li>
+				<li class="active"><a href="blog">Blog</a></li>
+			 </ul>
+        </div>
+      </div>
+    </div>  
+  
+    <div class="container">
+    
+      <div class="hero-unit">
+        <h1>¡La nube,<br> como siempre la has soñado!</h1>
+        <p>Estamos trabajando para brindar al público de Venezuela y Latinoamérica el servicio de nube pública más completo y con la mejor calidad.</p>
+      </div>
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+		<div class="row">
+			<div class="span8">
+				<h2>Construyendo la nube pública de Venezuela</h2>
+				<p>Envíanos tus sugerencias e ideas a través de nuestra cuenta de twitter, y forma parte de la construcción del servicio de nube computacional para Venezuela y latinoamérica que tanto has esperado.</p>
+				<hr>
+				<h2>¿Qué es computación en nube?</h2>
+				<p>A continuación les compartimos un video explicativo de nube computacional, realizado por la compañía GoGrid y subtitulado por el blog NubeBlog. ¡Disfrútenlo!</p>
+				<p><object width="402" height="377"><param name="movie" value="http://www.overstream.net/swf/player/oplx?oid=ate7sdson6n9&noplay=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.overstream.net/swf/player/oplx?oid=ate7sdson6n9&noplay=1" type="application/x-shockwave-flash" width="402" height="377" allowFullScreen="true"></embed></object></p>
+			</div>		
+			<div class="span4">
+<div class="well">
+<h3>Mantente informado</h3>
+<p>¡Subscribete a nuestra <a href="http://eepurl.com/kWXqj">lista de correo</a> para recibir información al momento del lanzamiento de Soluciones Hospedadas!</p></div>
+				<h3>Síguenos en twitter</h3>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 260,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#0095c2',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#0095c2'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('shcloudservices').start();
+</script>
+			</div>
+		</div>
+      
+      <hr>
+	     <footer>
+          <p>&copy; Soluciones Hospedadas 2012 - RIF J-40028335-3</p>
+        </footer>    
+    </div>
+	<!-- Piwik --> 
+	<script type="text/javascript" src="js/piwikbase.js"></script>
+	<script type="text/javascript" src="js/piwiktrack.js"></script>
+	<noscript><p><img src="http://piwik.solucioneshospedadas.com/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+	<!-- End Piwik Tracking Code -->    
+  </body>
+</html>
