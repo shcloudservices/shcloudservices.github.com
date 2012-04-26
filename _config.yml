@@ -6,7 +6,6 @@ date_format: ordinal
 default_asides: 
   - asides/recent_posts.html
   - asides/github.html
-  - asides/twitter.html
   - asides/delicious.html
   - asides/pinboard.html
   - asides/googleplus.html
@@ -42,7 +41,7 @@ simple_search: "http://google.com/search"
 source: source
 subscribe_email: ~
 subscribe_rss: /atom.xml
-subtitle: "¡Un blog de nubes diferente!"
+subtitle: "Desde las nubes"
 title: "Blog de Soluciones hospedadas"
 titlecase: true
 twitter_follow_button: true

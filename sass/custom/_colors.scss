@@ -2,9 +2,12 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-//$header-bg: #263347;
-//$subtitle-color: lighten($header-bg, 58);
-//$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
+$header-bg: #69b6d4;
+$title-color: #fff !default;
+$subtitle-color: lighten($header-bg, 58);
+$nav-bg: #f5f5f5;
+$page-bg: #f8f8f8 !default;
+$main-bg: #fff !default;
 //$nav-bg-front: image-url('noise.png');
 //$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
 //$sidebar-bg: desaturate(#eceff5, 8);
