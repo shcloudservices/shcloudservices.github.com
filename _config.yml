@@ -2,7 +2,7 @@
 author: "Equipo de Soluciones Hospedadas"
 category_dir: blog/categories
 code_dir: downloads/code
-date_format: ordinal
+date_format: "%d/%m/%Y"
 default_asides: 
   - asides/recent_posts.html
   - asides/github.html
