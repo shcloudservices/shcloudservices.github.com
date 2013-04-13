@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Blog de Soluciones hospedadas]]></title>
+  <link href="http://shcloudservices.github.com/atom.xml" rel="self"/>
+  <link href="http://shcloudservices.github.com/"/>
+  <updated>2013-04-13T10:27:26-05:00</updated>
+  <id>http://shcloudservices.github.com/</id>
+  <author>
+    <name><![CDATA[Equipo de Soluciones Hospedadas]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Qué es Soluciones Hospedadas]]></title>
+    <link href="http://shcloudservices.github.com/blog/2012/05/08/que-es-soluciones-hospedadas/"/>
+    <updated>2012-05-08T20:49:00-05:00</updated>
+    <id>http://shcloudservices.github.com/blog/2012/05/08/que-es-soluciones-hospedadas</id>
+    <content type="html"><![CDATA[<p>Soluciones Hospedadas es una empresa venezolana que nace con el objetivo de ofrecer una alternativa de servicios de computación en nube para Venezuela, pagables en Bolívares Fuertes, para facilitar el crecimiento del uso de esta tecnología que actualmente encuentra barreras de adopción debido al control de cambio existente en el País.</p>
+
+<!-- more -->
+
+
+<p>El proyecto estará basado en la plataforma abierta y libre de mayor crecimiento actualmente, OpenStack, y esta siendo desarrollado por un equipo conformado por dos emprendedores, usando PHP 5 y Symfony 2 como tecnologías para el panel de control, y utilizando el marco de trabajo Scrum y las prácticas ágiles de XP.</p>
+
+<p> De esta manera queremos contribuir al desarrollo del país, brindando la oportunidad a individuos y empresas de disfrutar los beneficios de la computación en nube pagando en moneda nacional.</p>
+
+<p>La primera fase del proyecto consiste en la oferta de máquinas virtuales basadas en varios sabores del sistema operativo Linux, y la implementación del panel de control para manejar la nube y el acceso al API para integraciones.</p>
+
+<p>Hoy escribimos el primer artículo de muchos otros, donde estaremos hablando de computación en nube así como de los avances del proyecto que vayamos implementando, pueden seguirnos a través de twitter @shcloudservices y suscribirse a nuestra lista de correo, a través de la cual estaremos informando del lanzamiento de la plataforma a aquellos que se encuentren interesados.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Primer Post]]></title>
+    <link href="http://shcloudservices.github.com/blog/2012/04/21/primer-post/"/>
+    <updated>2012-04-21T16:04:00-05:00</updated>
+    <id>http://shcloudservices.github.com/blog/2012/04/21/primer-post</id>
+    <content type="html"><![CDATA[<p>Una nube en Venezuela construida, nada más y nada menos bajo la plataforma sólida de Openstack. Desde este blog podrás enterarte de información interesante sobre el despliegue de aplicaciones en la nube y algunas cosas más.</p>
+]]></content>
+  </entry>
+  
+</feed>
