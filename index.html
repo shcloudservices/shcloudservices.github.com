@@ -1,69 +1,607 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Soluciones Hospedadas</title>
-    <link rel="shortcut icon" href="images/favicon.ico" >
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <link href="css/shcloudservices.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="#">Soluciones Hospedadas</a>
-        </div>
-      </div>
-    </div>  
-  
-    <div class="container">
-    
-		<div class="row">
-			<div class="span8">
-                <img id="cloudwords" src="images/cloudwords.png"/>
-			</div>		
-			<div class="span4">
-				<h3>Síguenos en twitter</h3>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<!DOCTYPE html><html lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Soluciones Hospedadas</title>
+<link rel="icon" type="image/png" href="img/shlogo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline": "#6e7881",
+                      "background": "#f7f9fb",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "surface-dim": "#d8dadc",
+                      "on-primary": "#ffffff",
+                      "primary": "#006591",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-secondary-fixed": "#141d21",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#c9e6ff",
+                      "on-primary-fixed": "#001e2f",
+                      "surface-container-high": "#e6e8ea",
+                      "on-background": "#191c1e",
+                      "inverse-surface": "#2d3133",
+                      "inverse-primary": "#89ceff",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#dbe4ea",
+                      "secondary-fixed-dim": "#bfc8ce",
+                      "surface": "#f7f9fb",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#d3e4fe",
+                      "primary-container": "#0ea5e9",
+                      "on-primary-fixed-variant": "#004c6e",
+                      "on-surface": "#191c1e",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-secondary-fixed-variant": "#3f484d",
+                      "error-container": "#ffdad6",
+                      "on-secondary-container": "#5d666b",
+                      "tertiary": "#505f76",
+                      "on-error": "#ffffff",
+                      "on-primary-container": "#003751",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "tertiary-container": "#8d9db5",
+                      "surface-bright": "#f7f9fb",
+                      "secondary-fixed": "#dbe4ea",
+                      "secondary": "#576065",
+                      "surface-container": "#eceef0",
+                      "primary-fixed-dim": "#89ceff",
+                      "surface-variant": "#e0e3e5",
+                      "on-surface-variant": "#3e4850",
+                      "on-tertiary-container": "#243449",
+                      "surface-tint": "#006591",
+                      "surface-container-low": "#f2f4f6",
+                      "outline-variant": "#bec8d2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "1.5rem",
+                      "xs": "0.5rem",
+                      "base": "4px",
+                      "lg": "2.5rem",
+                      "margin-mobile": "1rem",
+                      "margin-desktop": "2.5rem",
+                      "xl": "4rem",
+                      "sm": "1rem",
+                      "md": "1.5rem"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "label-xs": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.25",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-xs": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .gradient-primary {
+                background: linear-gradient(180deg, #38BDF8 0%, #0EA5E9 100%);
+            }
+            .ambient-shadow {
+                box-shadow: 0 10px 30px rgba(14, 165, 233, 0.05);
+            }
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #006591 0%, #0ea5e9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-surface-bright text-on-surface font-body-md antialiased overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-bright border-b border-outline-variant shadow-sm w-full top-0 sticky z-50 transition-all duration-300 ease-in-out">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="flex items-center gap-2 group cursor-pointer hover:opacity-80 transition-opacity duration-200" href="#home">
+<img alt="Soluciones Hospedadas Logo" class="h-10 w-10 object-contain" src="img/shlogo.png">
+<span class="font-headline-md text-headline-md font-bold text-primary hidden sm:block">Soluciones Hospedadas</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-lg items-center">
+<a class="text-primary border-b-2 border-primary pb-1 font-body-md text-body-md transition-all duration-300 ease-in-out hover:opacity-80" href="#home" data-i18n="nav-home">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary font-body-md text-body-md transition-all duration-300 ease-in-out hover:opacity-80" href="#services" data-i18n="nav-services">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary font-body-md text-body-md transition-all duration-300 ease-in-out hover:opacity-80" href="#contact" data-i18n="nav-contact">Contacto</a>
+</nav>
+<!-- Actions: Language Selector & Mobile Menu Button -->
+<div class="flex items-center gap-3">
+  <!-- Language Selector Pill (Colombia & USA) -->
+  <div class="inline-flex p-1 bg-surface-container rounded-lg border border-outline-variant/60 shadow-xs" role="group" aria-label="Selector de idioma">
+    <button type="button" id="lang-es" onclick="setLanguage('es')" class="lang-btn flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-md bg-surface-container-lowest text-primary shadow-xs transition-all duration-200 cursor-pointer" title="Español (Colombia)">
+      <svg class="w-4 h-3 rounded-[2px] shadow-2xs shrink-0" viewBox="0 0 32 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="12" fill="#FCD116"/>
+        <rect y="12" width="32" height="6" fill="#003893"/>
+        <rect y="18" width="32" height="6" fill="#CE1126"/>
+      </svg>
+      <span>ES</span>
+    </button>
+    <button type="button" id="lang-en" onclick="setLanguage('en')" class="lang-btn flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-md text-on-surface-variant hover:text-on-surface transition-all duration-200 cursor-pointer" title="English (USA)">
+      <svg class="w-4 h-3 rounded-[2px] shadow-2xs shrink-0" viewBox="0 0 32 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="24" fill="#B22234"/>
+        <rect y="1.85" width="32" height="1.85" fill="#FFFFFF"/>
+        <rect y="5.54" width="32" height="1.85" fill="#FFFFFF"/>
+        <rect y="9.23" width="32" height="1.85" fill="#FFFFFF"/>
+        <rect y="12.92" width="32" height="1.85" fill="#FFFFFF"/>
+        <rect y="16.61" width="32" height="1.85" fill="#FFFFFF"/>
+        <rect y="20.3" width="32" height="1.85" fill="#FFFFFF"/>
+        <rect width="13" height="13" fill="#3C3B6E"/>
+        <circle cx="2.5" cy="2.5" r="0.7" fill="#fff"/>
+        <circle cx="6.5" cy="2.5" r="0.7" fill="#fff"/>
+        <circle cx="10.5" cy="2.5" r="0.7" fill="#fff"/>
+        <circle cx="4.5" cy="4.5" r="0.7" fill="#fff"/>
+        <circle cx="8.5" cy="4.5" r="0.7" fill="#fff"/>
+        <circle cx="2.5" cy="6.5" r="0.7" fill="#fff"/>
+        <circle cx="6.5" cy="6.5" r="0.7" fill="#fff"/>
+        <circle cx="10.5" cy="6.5" r="0.7" fill="#fff"/>
+        <circle cx="4.5" cy="8.5" r="0.7" fill="#fff"/>
+        <circle cx="8.5" cy="8.5" r="0.7" fill="#fff"/>
+        <circle cx="2.5" cy="10.5" r="0.7" fill="#fff"/>
+        <circle cx="6.5" cy="10.5" r="0.7" fill="#fff"/>
+        <circle cx="10.5" cy="10.5" r="0.7" fill="#fff"/>
+      </svg>
+      <span>EN</span>
+    </button>
+  </div>
+  <!-- Mobile Menu Button -->
+  <button id="mobile-menu-btn" class="md:hidden text-on-surface p-2 rounded-md hover:bg-surface-container cursor-pointer" aria-label="Menu">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+</div>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-surface-bright px-margin-mobile py-4 flex flex-col gap-3">
+  <a class="text-primary font-body-md text-body-md py-1" href="#home" data-i18n="nav-home">Inicio</a>
+  <a class="text-on-surface-variant hover:text-primary font-body-md text-body-md py-1" href="#services" data-i18n="nav-services">Servicios</a>
+  <a class="text-on-surface-variant hover:text-primary font-body-md text-body-md py-1" href="#contact" data-i18n="nav-contact">Contacto</a>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-xl pb-32 lg:pt-32 lg:pb-48 bg-gradient-to-br from-surface-bright via-surface-bright to-[#E0F2FE]" id="home">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest border border-outline-variant text-primary font-label-sm text-label-sm mb-6 ambient-glow">
+<span class="material-symbols-outlined text-[16px]" data-icon="cloud">cloud</span>
+<span data-i18n="hero-badge">Soluciones Cloud de Nueva Generación</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6 leading-tight" data-i18n="hero-title">
+                        Innovación a su Medida, <br class="hidden md:block"/>
+<span class="text-gradient">Desde la Nube</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto md:mx-0" data-i18n="hero-desc">
+                        Expertos en desarrollo personalizado, automatización e inteligencia artificial aplicada para potenciar su negocio.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a href="#services" class="bg-gradient-to-b from-[#38BDF8] to-[#0EA5E9] text-on-primary font-label-sm text-label-sm px-8 py-3 rounded-lg hover:opacity-90 transition-opacity shadow-sm flex items-center justify-center gap-2">
+    <span data-i18n="hero-btn-solutions">Ver Soluciones</span>
+    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a href="#contact" class="bg-surface-container-lowest text-primary font-label-sm text-label-sm px-8 py-3 rounded-lg border border-primary hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2" data-i18n="hero-btn-consulting">
+    Agendar Consultoría
+</a>
+</div>
+</div>
+<div class="flex-1 mt-12 md:mt-0 relative w-full h-[400px] md:h-[500px]">
+<!-- Placeholder for an abstract cloud/tech graphic -->
+<div class="absolute inset-0 bg-surface-container-lowest rounded-2xl ambient-glow border border-outline-variant/30 flex items-center justify-center overflow-hidden">
+<div class="bg-cover bg-center w-full h-full opacity-80 mix-blend-multiply" data-alt="A sophisticated, abstract 3D visualization of cloud computing architecture. Floating geometric glass panes and soft glowing cyan spheres connected by fine light trails on a clean white background. Bright, airy, modern light-mode aesthetic emphasizing precision and high-end enterprise technology." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_bINkmDAZHuvMqeX68N48vcK5eEcaF8P5KI3su_SWciMDSN3-VzEtEfeThPds9lTa6S0yQ_feS725h3mBl7qdkcr69UofAa6l9asGjjQvIIdxWIxnXwShDyZQe_x3EU3GWpsXKs-spcEel61Xz-EMeRY8EUa8etqm9DIYJkrO4gV4zISZsar3cq7bzvwZbF3twHwlSo3e6ow4CcEgRDXgnhK9RtDKxntjl374HZpvVzHcUtT5P6aUmg')"></div>
+</div>
+</div>
+</div>
+<!-- Abstract background elements -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-primary-fixed-dim/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/4 w-[600px] h-[600px] bg-inverse-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
+</section>
+<!-- Quick Services Overview (Bento Grid) -->
+<section class="py-xl bg-surface-bright" id="services">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4" data-i18n="services-title">Nuestros Servicios</h2>
+<p class="font-body-md text-body-md text-on-surface-variant" data-i18n="services-desc">Soluciones integrales diseñadas para el ecosistema cloud moderno.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[240px]">
+<!-- Large Card (Span 2x2) -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xl ambient-glow border border-outline-variant/50 p-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 bg-[#dbe4ea] text-on-secondary-fixed font-label-xs text-label-xs rounded-full mb-4" data-i18n="service-1-tag">Core Service</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-2" data-i18n="service-1-title">Desarrollo Cloud Nativo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm" data-i18n="service-1-desc">Aplicaciones construidas específicamente para entornos en la nube, maximizando escalabilidad, rendimiento y eficiencia de costos.</p>
+</div>
+<!-- Abstract decorative element -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-fixed-dim/30 rounded-full blur-[40px] group-hover:bg-primary-fixed/50 transition-colors duration-500"></div>
+</div>
+<!-- Medium Card -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl ambient-glow border border-outline-variant/50 p-md flex items-center gap-6">
+<div class="w-16 h-16 bg-tertiary-fixed shrink-0 rounded-full flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[32px]" data-icon="memory">memory</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1 text-[20px]" data-i18n="service-2-title">Inteligencia Artificial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm" data-i18n="service-2-desc">Modelos predictivos y procesamiento de lenguaje natural integrados en su flujo de trabajo.</p>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-glow border border-outline-variant/50 p-md flex flex-col justify-between">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-1" data-i18n="service-3-title">Automatización e Integraciones con WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs" data-i18n="service-3-desc">Conexión de procesos y flujos automatizados de mensajería y atención con WhatsApp.</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-glow border border-outline-variant/50 p-md flex flex-col justify-between">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="dns">dns</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-1" data-i18n="service-4-title">Migración a la Nube</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs" data-i18n="service-4-desc">Transición segura y sin interrupciones operativas.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl bg-surface-bright border-t border-outline-variant/30" id="contact">
+<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg font-semibold text-on-surface mb-lg" data-i18n="contact-title">¿Listo para escalar su negocio?</h2>
+<form action="/api/contact" class="bg-surface rounded-lg p-lg ambient-shadow border border-outline-variant/30 text-left space-y-md" id="contact-form" method="POST">
+<!-- Anti-spam Honeypot -->
+<input name="_honey" style="display:none" type="text">
+<!-- FormSubmit Options -->
+<input name="_captcha" type="hidden" value="false">
+<input id="form-subject" name="_subject" type="hidden" value="Nuevo contacto desde la web - Soluciones Hospedadas">
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1" for="contact-name" data-i18n="form-name-label">Nombre Completo</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-3 py-2 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow" id="contact-name" name="Nombre" placeholder="Ej. Juan Pérez" data-i18n-placeholder="form-name-placeholder" required type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1" for="contact-email" data-i18n="form-email-label">Correo Corporativo</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-3 py-2 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow" id="contact-email" name="Email" placeholder="juan@empresa.com" data-i18n-placeholder="form-email-placeholder" required type="email">
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1" for="contact-message" data-i18n="form-message-label">Mensaje</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-md px-3 py-2 text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow resize-none" id="contact-message" name="Mensaje" placeholder="Describa su proyecto o necesidades de servicio..." data-i18n-placeholder="form-message-placeholder" required rows="4"></textarea>
+</div>
+
+<!-- Status Message Banner -->
+<div class="hidden p-4 rounded-md text-sm font-medium" id="form-status"></div>
+
+<button class="w-full gradient-primary text-on-primary font-label-sm text-label-sm font-semibold py-3 rounded-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50" id="form-submit-btn" type="submit">
+    <span id="form-submit-text" data-i18n="form-submit-btn">Solicitar Información</span>
+    <span class="hidden animate-spin material-symbols-outlined text-[18px]" id="form-submit-spinner">progress_activity</span>
+</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-xl border-t border-outline-variant flat no shadows">
+<div class="max-w-7xl mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-sm">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Soluciones Hospedadas</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2" data-i18n="footer-rights">© 2024 Soluciones Hospedadas. Todos los derechos reservados.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap justify-end gap-x-lg gap-y-sm">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#" data-i18n="footer-privacy">Política de Privacidad</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#" data-i18n="footer-terms">Términos de Servicio</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#" data-i18n="footer-faq">Preguntas Frecuentes</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#" data-i18n="footer-support">Soporte</a>
+</div>
+</div>
+</footer>
+
 <script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 260,
-  height: 300,
-  theme: {
-    shell: {
-      background: '#0095c2',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#000000',
-      links: '#0095c2'
-    }
+const translations = {
+  es: {
+    "page-title": "Soluciones Hospedadas",
+    "nav-home": "Inicio",
+    "nav-services": "Servicios",
+    "nav-contact": "Contacto",
+    "hero-badge": "Soluciones Cloud de Nueva Generación",
+    "hero-title": 'Innovación a su Medida, <br class="hidden md:block"/><span class="text-gradient">Desde la Nube</span>',
+    "hero-desc": "Expertos en desarrollo personalizado, automatización e inteligencia artificial aplicada para potenciar su negocio.",
+    "hero-btn-solutions": "Ver Soluciones",
+    "hero-btn-consulting": "Agendar Consultoría",
+    "services-title": "Nuestros Servicios",
+    "services-desc": "Soluciones integrales diseñadas para el ecosistema cloud moderno.",
+    "service-1-tag": "Core Service",
+    "service-1-title": "Desarrollo Cloud Nativo",
+    "service-1-desc": "Aplicaciones construidas específicamente para entornos en la nube, maximizando escalabilidad, rendimiento y eficiencia de costos.",
+    "service-2-title": "Inteligencia Artificial",
+    "service-2-desc": "Modelos predictivos y procesamiento de lenguaje natural integrados en su flujo de trabajo.",
+    "service-3-title": "Automatización e Integraciones con WhatsApp",
+    "service-3-desc": "Conexión de procesos y flujos automatizados de mensajería y atención con WhatsApp.",
+    "service-4-title": "Migración a la Nube",
+    "service-4-desc": "Transición segura y sin interrupciones operativas.",
+    "contact-title": "¿Listo para escalar su negocio?",
+    "form-name-label": "Nombre Completo",
+    "form-name-placeholder": "Ej. Juan Pérez",
+    "form-email-label": "Correo Corporativo",
+    "form-email-placeholder": "juan@empresa.com",
+    "form-message-label": "Mensaje",
+    "form-message-placeholder": "Describa su proyecto o necesidades de servicio...",
+    "form-submit-btn": "Solicitar Información",
+    "form-sending": "Enviando...",
+    "form-success": "¡Gracias! Su mensaje ha sido enviado correctamente. Nos comunicaremos a la brevedad.",
+    "form-error": "Ocurrió un error al enviar el mensaje. Por favor intente nuevamente.",
+    "form-subject": "Nuevo contacto desde la web - Soluciones Hospedadas",
+    "footer-rights": "© 2024 Soluciones Hospedadas. Todos los derechos reservados.",
+    "footer-privacy": "Política de Privacidad",
+    "footer-terms": "Términos de Servicio",
+    "footer-faq": "Preguntas Frecuentes",
+    "footer-support": "Soporte"
   },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    behavior: 'all'
+  en: {
+    "page-title": "Soluciones Hospedadas - Cloud Services",
+    "nav-home": "Home",
+    "nav-services": "Services",
+    "nav-contact": "Contact",
+    "hero-badge": "Next-Generation Cloud Solutions",
+    "hero-title": 'Tailored Innovation, <br class="hidden md:block"/><span class="text-gradient">From the Cloud</span>',
+    "hero-desc": "Experts in custom development, automation, and applied artificial intelligence to empower your business.",
+    "hero-btn-solutions": "View Solutions",
+    "hero-btn-consulting": "Schedule Consultation",
+    "services-title": "Our Services",
+    "services-desc": "Comprehensive solutions designed for the modern cloud ecosystem.",
+    "service-1-tag": "Core Service",
+    "service-1-title": "Cloud-Native Development",
+    "service-1-desc": "Applications built specifically for cloud environments, maximizing scalability, performance, and cost efficiency.",
+    "service-2-title": "Artificial Intelligence",
+    "service-2-desc": "Predictive models and natural language processing integrated into your workflow.",
+    "service-3-title": "Automation & WhatsApp Integrations",
+    "service-3-desc": "Process connection and automated messaging and customer care workflows with WhatsApp.",
+    "service-4-title": "Cloud Migration",
+    "service-4-desc": "Secure transition without operational disruption.",
+    "contact-title": "Ready to scale your business?",
+    "form-name-label": "Full Name",
+    "form-name-placeholder": "e.g. John Doe",
+    "form-email-label": "Corporate Email",
+    "form-email-placeholder": "john@company.com",
+    "form-message-label": "Message",
+    "form-message-placeholder": "Describe your project or service needs...",
+    "form-submit-btn": "Request Information",
+    "form-sending": "Sending...",
+    "form-success": "Thank you! Your message has been sent successfully. We will get in touch shortly.",
+    "form-error": "An error occurred while sending your message. Please try again.",
+    "form-subject": "New contact from website - Soluciones Hospedadas",
+    "footer-rights": "© 2024 Soluciones Hospedadas. All rights reserved.",
+    "footer-privacy": "Privacy Policy",
+    "footer-terms": "Terms of Service",
+    "footer-faq": "FAQ",
+    "footer-support": "Support"
   }
-}).render().setUser('shcloudservices').start();
+};
+
+function setLanguage(lang) {
+  if (!translations[lang]) return;
+  document.documentElement.lang = lang;
+  try {
+    localStorage.setItem('sh_lang', lang);
+  } catch (e) {}
+
+  if (translations[lang]['page-title']) {
+    document.title = translations[lang]['page-title'];
+  }
+
+  const subjectInput = document.getElementById('form-subject');
+  if (subjectInput && translations[lang]['form-subject']) {
+    subjectInput.value = translations[lang]['form-subject'];
+  }
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang][key] !== undefined) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.value = translations[lang][key];
+      } else {
+        el.innerHTML = translations[lang][key];
+      }
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang][key] !== undefined) {
+      el.placeholder = translations[lang][key];
+    }
+  });
+
+  const btnEs = document.getElementById('lang-es');
+  const btnEn = document.getElementById('lang-en');
+  const activeClass = 'lang-btn flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-md bg-surface-container-lowest text-primary shadow-xs transition-all duration-200 cursor-pointer';
+  const inactiveClass = 'lang-btn flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-md text-on-surface-variant hover:text-on-surface transition-all duration-200 cursor-pointer';
+
+  if (btnEs && btnEn) {
+    if (lang === 'es') {
+      btnEs.className = activeClass;
+      btnEn.className = inactiveClass;
+    } else {
+      btnEn.className = activeClass;
+      btnEs.className = inactiveClass;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  let savedLang = 'es';
+  try {
+    savedLang = localStorage.getItem('sh_lang') || 'es';
+  } catch (e) {}
+  setLanguage(savedLang);
+
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+  }
+
+  // Contact Form AJAX Handler
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const statusDiv = document.getElementById('form-status');
+      const submitBtn = document.getElementById('form-submit-btn');
+      const submitText = document.getElementById('form-submit-text');
+      const spinner = document.getElementById('form-submit-spinner');
+      const lang = document.documentElement.lang || 'es';
+
+      submitBtn.disabled = true;
+      if (spinner) spinner.classList.remove('hidden');
+      if (submitText) submitText.textContent = translations[lang]['form-sending'] || 'Enviando...';
+      if (statusDiv) statusDiv.className = 'hidden';
+
+      const formData = new FormData(contactForm);
+      const data = {};
+      formData.forEach((value, key) => { data[key] = value; });
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          if (statusDiv) {
+            statusDiv.textContent = translations[lang]['form-success'];
+            statusDiv.className = 'p-4 rounded-md text-sm font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 block';
+          }
+          contactForm.reset();
+        } else {
+          throw new Error(result.message || 'Error');
+        }
+      } catch (err) {
+        if (statusDiv) {
+          statusDiv.textContent = translations[lang]['form-error'];
+          statusDiv.className = 'p-4 rounded-md text-sm font-medium bg-rose-50 text-rose-800 border border-rose-200 block';
+        }
+      } finally {
+        submitBtn.disabled = false;
+        if (spinner) spinner.classList.add('hidden');
+        if (submitText) submitText.textContent = translations[lang]['form-submit-btn'];
+      }
+    });
+  }
+});
 </script>
-			</div>
-		</div>
-      
-      <hr>
-	     <footer>
-          <p class="text-center">&copy; Soluciones Hospedadas 2013 - RIF J-40028335-3</p>
-        </footer>    
-    </div>
-	<!-- Piwik --> 
-	<script type="text/javascript" src="js/piwikbase.js"></script>
-	<script type="text/javascript" src="js/piwiktrack.js"></script>
-	<noscript><p><img src="http://piwik.solucioneshospedadas.com/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
-	<!-- End Piwik Tracking Code -->    
-  </body>
-</html>
+
+
+</body></html>
